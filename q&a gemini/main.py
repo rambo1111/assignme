@@ -96,7 +96,7 @@ def process_file(file_path, subject):
         HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE
     }
     
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash-lite')
     extracted_text = ""
 
     # Process each image with the generative model
